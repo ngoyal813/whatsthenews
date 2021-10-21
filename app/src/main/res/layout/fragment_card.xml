@@ -5,9 +5,7 @@
     android:id="@+id/recycler_view_news_card"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginBottom="100dp"
-    android:elevation="20dp"
-
+    android:layout_marginBottom="50dp"
     tools:context=".cardFragment">
 
     <com.google.android.material.card.MaterialCardView
@@ -15,10 +13,12 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_margin="30dp"
+        app:cardElevation="15dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
-        android:backgroundTint="#F8F0E3"
-        android:elevation="20dp"
+        android:backgroundTint="#EA8D77"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -77,9 +77,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginTop="16dp"
-                    android:gravity="bottom"
                     android:text="LOL"
-                    android:textAlignment="textStart"
+                    android:gravity="bottom"
                     android:textAppearance="?attr/textAppearanceBody2"
                     android:textColor="?android:attr/textColorSecondary" />
 
